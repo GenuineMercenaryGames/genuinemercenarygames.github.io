@@ -11464,7 +11464,7 @@ hr {
 .header {
   position: relative;
   min-height: 650px;
-  background: url(../imgs/background_d_1.png) no-repeat center center fixed;
+  background: url(../img/gmg/GMG_banner2.png) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -11618,19 +11618,19 @@ section.py-lg {
 }
 
 section.pattern-style-1 {
-  background-image: url(../imgs/style-1.png);
+  background-image: url(../img/patterns/style-1.png);
 }
 
 section.pattern-style-2 {
-  background-image: url(../imgs/style-2.png);
+  background-image: url(../img/patterns/style-2.png);
 }
 
 section.pattern-style-3 {
-  background-image: url(../imgs/style-3.png);
+  background-image: url(../img/patterns/style-3.png);
 }
 
 section.pattern-style-4 {
-  background-image: url("../imgs/stars 3.png");
+  background-image: url(../img/patterns/style-1.png);
 }
 
 section.has-overlay {
