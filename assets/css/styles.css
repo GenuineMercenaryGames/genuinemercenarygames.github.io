@@ -97,7 +97,7 @@
 .custom_rrss_btn {
 	width: 4rem;
 	height: auto;
-	display: block;
+	display: inline-block;
 }
 
 .custom_rrss_btn:hover {
