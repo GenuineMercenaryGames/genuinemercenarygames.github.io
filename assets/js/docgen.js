@@ -37,3 +37,34 @@ function docgen_writeProfile(name, picture, description, socials) {
 	`;
 	document.write(s);
 }
+
+function docgen_writeSocialNetwork(snName, snImage, snUrl) {
+	// sn prefix for social network
+	// TODO : Clean up, this is some old code I had lying around so it's pre-multiline strings.
+	var str0 = '<a class="dra_a" href="';
+	var str01 = '" target="_blank">';
+	var strend = "</a>";
+	
+	var strbase = '<div class="col-md-4 my-3 my-md-0">';
+	var strbasend = '</div>';
+	
+	var str1 = '<div class="card dra_image_container2">' +
+			'<div class="card-body">' +
+				'<div class="media align-items-center mb-3">' +
+					'<img class="mr-3" src="';
+	
+	var str1p2 = '"alt="socials_image">' +
+					'<div class="media-body">' +
+						'<h6 class="mt-1 mb-0">';
+	var str2 = '</h6>' +
+						'<small class="text-muted mb-0">';
+	
+	var str3 = '</small>' +
+					'</div>'+
+				'</div>'+
+				'<p class="mb-0"></p>'+
+			'</div>'+
+		'</div>';
+	
+	document.write(strbase + str0 + snUrl + str01 + str1 + snImage + str1p2 + snName + str2 + str3 + strend + strbasend);
+}
