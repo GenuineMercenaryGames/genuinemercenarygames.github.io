@@ -110,8 +110,9 @@
 				<h6 class="section-subtitle text-center"></h6>
 				
 				<center> <!-- This is a hack... too bad! -->
-				
-				<div class="dra_objects_padding">
+					
+				<!-- Oculto por ahora -->
+				<div class="dra_objects_padding" style="display: none;"> 
 					<img src="./assets/img/game/TheGameTitle.png" width="100%"> <!-- TODO: Change this with the proper game title! -->
 				</div>
 				<div class="dra_objects_padding">
@@ -122,160 +123,154 @@
 							<img src="./assets/img/game/TheGameImage.png">
 						</div>
 					</a>
-					
+
 					<!-- Juega a wdw -->
 					<div class="dra_margin">
-						<h1>Juega a THE GAME</h1>
+						<h1>The Sweeper</h1>
 						<div class="dra_margin dra_text_justify">
-						<p>
-						<b>The Game</b> es un videojuego con una descripción que hay que terminar.
-						</p>
-						<p>
-						En <b>The Game</b>, tomarás el papel de un poderoso personaje el cuál puede usar muchas armas y cosas por el estilo.
-						</p>
-						<p>
-						Embárcate en una épica aventura para explorar mazmorras y hacer peripecias varias.
-						</p>
+							<p>
+								<b>The Sweeper</b> es un roguelike de acción en 3D con vista cenital ambientado en un futuro postapocalíptico, donde las grandes corporaciones han convertido la limpieza de colonias infestadas en un negocio.
+							</p>
+							<p>
+								En <b>The Sweeper</b>, encarnas a un <b>Sweeper</b>, un operario desechable contratado por Sweeper Inc. para adentrarse en instalaciones invadidas, eliminar formas de vida alienígenas y despejar cada zona a base de fuego, reflejos y supervivencia.
+							</p>
+							<p>
+								Explora escenarios hostiles, enfréntate a enemigos de corto y largo alcance, consigue armas y mejoras, derrota a los jefes de cada área y sigue avanzando en una experiencia rejugable donde cada intento puede ser el definitivo.
+							</p>
+							<p>
+								Porque en <b>The Sweeper</b>, la suciedad no se barre. Se ametralla.
+							</p>
 						</div>
 					</div>
-					
-					<!-- Características -->
-					<div class="container">
+
+					<!-- Características - Oculto por ahora -->
+					<div class="container" style="display: none;">
 						<h3 class="section-title mb-5 text-center">Características</h3>
 						<h6 class="section-subtitle text-center"></h6>
 
 						<div class="row">
 							<script>
-								
-								<!-- This is a fucking hack! too bad! -->
-								var str0 = '<p class="dra_a" href="';
-								var str01 = '" target="_blank">';
-								var strend = "</p>";
-								
-								var strbase = '<div class="col-md-4 my-3 my-md-0">';
-								var strbasend = '</div>';
-								
-								var str1 = '<div class="card dra_image_container2">' +
+
+								<!-- This is a fucking hack! too bad! -- >
+																var str0 = '<p class="dra_a" href="';
+									var str01 = '" target="_blank">';
+									var strend = "</p>";
+
+									var strbase = '<div class="col-md-4 my-3 my-md-0">';
+									var strbasend = '</div>';
+
+									var str1 = '<div class="card dra_image_container2">' +
 										'<div class="card-body">' +
-											'<div class="media align-items-center mb-3">' +
-												'<img class="mr-3" src="';
-								
-								var str1p2 = '"alt="Img">' +
-												'<div class="media-body">' +
-													'<h6 class="mt-1 mb-0">';
-								var str2 = '</h6>' +
-													'<small class="text-muted mb-0">';
-								
-								var str3 = '</small>' +
-												'</div>'+
-											'</div>'+
-											'<p class="mb-0"></p>'+
-										'</div>'+
-									'</div>';
-								
-								// Estos son mensajes genéricos, siempre se pueden cambiar para que tengan un significado más acorde
-								var rrss = [
-									{name: "Uso de Magia", img: "./assets/img/icons/magic.png", url : ""},
-									{name: "Conjuros Dinámicos", img: "./assets/img/icons/spells.png", url: ""},
-									{name: "Rejugabilidad", img: "./assets/img/icons/replay.png", url: ""},
-									{name: "Exploración", img : "./assets/img/icons/exploracion.png", url: ""},
-									{name: "Competitividad", img : "./assets/img/icons/competitividad.png", url: ""},
-									{name: "Habilidad", img : "./assets/img/icons/skills.png", url: ""},
-									{name: "Ambientación", img : "./assets/img/icons/ambientacion.png", url: ""},
-									{name: "Diseño Artístico", img : "./assets/img/icons/art.png", url: ""},
-									{name: "Personalización", img : "./assets/img/icons/customization.png", url: ""}
-								];
-								
-								for(let i = 0; i < rrss.length; i+=1)
-								{
-									document.write(strbase + str0 + rrss[i].url + str01 + str1 + rrss[i].img + str1p2 + rrss[i].name + str2 + str3 + strend + strbasend);
-								}
+										'<div class="media align-items-center mb-3">' +
+										'<img class="mr-3" src="';
+
+									var str1p2 = '"alt="Img">' +
+										'<div class="media-body">' +
+										'<h6 class="mt-1 mb-0">';
+									var str2 = '</h6>' +
+										'<small class="text-muted mb-0">';
+
+									var str3 = '</small>' +
+										'</div>' +
+										'</div>' +
+										'<p class="mb-0"></p>' +
+										'</div>' +
+										'</div>';
+
+									// Estos son mensajes genéricos, siempre se pueden cambiar para que tengan un significado más acorde
+									var rrss = [
+										{ name: "Uso de Magia", img: "./assets/img/icons/magic.png", url: "" },
+										{ name: "Conjuros Dinámicos", img: "./assets/img/icons/spells.png", url: "" },
+										{ name: "Rejugabilidad", img: "./assets/img/icons/replay.png", url: "" },
+										{ name: "Exploración", img: "./assets/img/icons/exploracion.png", url: "" },
+										{ name: "Competitividad", img: "./assets/img/icons/competitividad.png", url: "" },
+										{ name: "Habilidad", img: "./assets/img/icons/skills.png", url: "" },
+										{ name: "Ambientación", img: "./assets/img/icons/ambientacion.png", url: "" },
+										{ name: "Diseño Artístico", img: "./assets/img/icons/art.png", url: "" },
+										{ name: "Personalización", img: "./assets/img/icons/customization.png", url: "" }
+									];
+
+									for (let i = 0; i < rrss.length; i += 1) {
+										document.write(strbase + str0 + rrss[i].url + str01 + str1 + rrss[i].img + str1p2 + rrss[i].name + str2 + str3 + strend + strbasend);
+									}
 							</script>
 						</div>
 					</div>
-					
-					<div class="dra_margin">
+
+					<!-- Oculto por ahora -->
+					<div class="dra_margin" style="display: none;">
 						<h1>Vídeos</h1>
 						<!-- TODO : Poner un vídeo de gameplay o trailer del juego o lo que sea, subido de youtube. Ahora mismo, esto no apunta a ningún vídeo. -->
 						<center>
-						<iframe width="100%" height="720" src="https://www.youtube.com/embed/" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<iframe width="100%" height="720" src="https://www.youtube.com/embed/" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						</center>
 					</div>
-					
+
 					<div class="container">
 						<h3 class="section-title mb-5 text-center">Imágenes</h3>
 						<h6 class="section-subtitle text-center"></h6>
 
 						<div class="row">
-						
+
 							<script>
-								
+
 								// NOTA: buscar el objeto con id "popupimagen" para el popup de imágenes on click.
-								
+
 								function handlePopUpImage(imageName) {
 									let wrapper = document.getElementById("popupwrapper");
 									let img = document.getElementById("popupimagen");
-									
-									if(imageName.length <= 0)
-									{
+
+									if (imageName.length <= 0) {
 										wrapper.style.display = "none";
 									}
-									else
-									{
+									else {
 										img.src = imageName;
 										wrapper.style.display = "block";
 									}
 								}
-								
+
 								function makeImageDisplay(str = "./assets/imgs/spells.png") {
 									let ans = "<div class=\"col-md-4 my-3 my-md-0\"><a class=\"dra_a\" href=\"javascript:handlePopUpImage('" + str + "')\"><img src=\"" + str + "\" width=\"100%\" class=\"card dra_image_container2\"></a></div>";
 									return ans;
 								}
-								
+
 								function makeImageDisplayArray(imagesToDisplay) {
 									let str = "<div class=\"row\">";
-									for(let i = 0; i < imagesToDisplay.length; i+=1) {
+									for (let i = 0; i < imagesToDisplay.length; i += 1) {
 										str += makeImageDisplay(imagesToDisplay[i]);
 									}
 									str += "</div>";
 									document.write(str);
 								}
-								
+
 								function shuffleArray(arr) {
-									for(let i = 0; i < arr.length; i+=1) {
+									for (let i = 0; i < arr.length; i += 1) {
 										let r = Math.floor(Math.random() * arr.length);
 										let temp = arr[i];
 										arr[i] = arr[r];
 										arr[r] = temp;
 									}
 								}
-								
+
 								var imagesA = [
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
+									"assets/img/game/album/1.png",
+									"assets/img/game/album/2.png",
 								];
 								var imagesB = [
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
-									"assets/img/game/album/default.png",
 								];
-								
+
 								// Lo de las listas es solo una forma de demostrar que podemos escribir diferentes secciones, en plan imágenes de personajes, imágenes de screenshots, etc... lo que sea. Y si crece mucho la galería, siempre podemos ponerlo en una página a parte y que aquí se vea solo la tarjeta en plan como en la tienda de Steam.
-								
+
 								shuffleArray(imagesA);
 								shuffleArray(imagesB);
-								
+
 								makeImageDisplayArray(imagesA);
 								makeImageDisplayArray(imagesB);
-								
+
 							</script>
 						</div>
 					</div>
-					
+
 				</div>
 				</center>
 				
@@ -298,7 +293,7 @@
 						// TODO : Teneis que poner vuestro nombre, vuestra descripción (resumen super corto de qué es lo que haceis en este proyecto) y luego decidis qué redes sociales poner en vuestro perfil y ya está. De momento, está copiapegado mi github varias veces, cambiad el URL a vuestras redes y ya, las que querais poner, que si no quereis poner ninguna, se puede dejar vacío y ya está.
 						docgen_writeProfile(
 							"Daniel Rodríguez Ariza",
-							"assets/img/pfp/default.png",
+							"https://avatars.githubusercontent.com/u/136387964?v=4",
 							"Programador en Genuine Mercenary Games.",
 							[
 								{url: "https://github.com/DanielRodriguezAriza", img:"./assets/img/socials/ghicon.png"}
@@ -306,7 +301,7 @@
 						);
 						docgen_writeProfile(
 							"Iago Caldentey Palmer",
-							"assets/img/pfp/default.png",
+							"https://media.licdn.com/dms/image/v2/D4D03AQGtw-ufSBybFg/profile-displayphoto-shrink_800_800/B4DZUyn8I_HYAc-/0/1740311086030?e=1775088000&v=beta&t=HSdBOaA5vvopcUIGcdE2C91eFsN1eLXuUoOJ4PSVcUU",
 							"Programador",
 							[
 								{url: "https://github.com/iago-cpalmer", img:"./assets/img/socials/ghicon.png"}
@@ -314,7 +309,7 @@
 						);
 						docgen_writeProfile(
 							"Enrique de la Calle",
-							"assets/img/pfp/default.png",
+							"https://media.licdn.com/dms/image/v2/D4D03AQGGi8lbHMgONQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1698247535882?e=1775088000&v=beta&t=9WFKKqVHkd4bmvvLhGGR2RxAwN92vLEbauhr9bhvKZI",
 							"Programador en Genuine Mercenary Games.",
 							[
 								{url: "https://github.com/101001000", img:"./assets/img/socials/ghicon.png"},
@@ -323,7 +318,7 @@
 						);
 						docgen_writeProfile(
 							"Celia Domínguez de Sarriá",
-							"assets/img/pfp/default.png",
+							"https://avatars.githubusercontent.com/u/237794911?v=4",
 							"UI/UX Designer & Concept Artist",
 							[
 								{url: "https://github.com/celiads1999-pixel", img:"./assets/img/socials/ghicon.png"},
@@ -332,7 +327,7 @@
 						);
 						docgen_writeProfile(
 							"Alejandro Escudero Matas",
-							"assets/img/pfp/default.png",
+							"https://media.licdn.com/dms/image/v2/D4D03AQGA4GiATpsCBA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1668595874160?e=1775088000&v=beta&t=4zRxo0CD8-_Deh30fxDjSNZb_z1TKa3k-tjUygVy55c",
 							"Programador",
 							[
 								{url: "https://github.com/AlejandroEscuderoMatas", img:"./assets/img/socials/ghicon.png"}
