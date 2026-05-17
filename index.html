@@ -19,7 +19,7 @@
 		
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-		
+				
 		<!-- Document content generation JS -->
 		<script src="assets/js/docgen.js"></script>
 		
@@ -97,7 +97,7 @@
 				</center>
 			</div>
 			<center>
-				<img src="assets/img/gmg/GMG_pfp2_512.png" width="20%">
+				<img src="assets/img/gmg/GMG_pfp2_512.png" width="10%">
 			</center>
 		</section>
 
@@ -206,9 +206,60 @@
 						</center>
 					</div>
 
+					<!-- Historia -->
+					<div class="container dra_margin">
+						<h3 class="section-title mb-5 text-center">Historia</h3>
+						<h6 class="section-subtitle text-center"></h6>
+
+						<div id="sweeper_comic_carousel" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 900px;">
+							<ol class="carousel-indicators">
+								<li data-target="#sweeper_comic_carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#sweeper_comic_carousel" data-slide-to="1"></li>
+								<li data-target="#sweeper_comic_carousel" data-slide-to="2"></li>
+								<li data-target="#sweeper_comic_carousel" data-slide-to="3"></li>
+							</ol>
+
+							<div class="carousel-inner text-center">
+								<div class="carousel-item active">
+									<a href="javascript:handlePopUpImage('assets/img/game/comic/sweeper_comic_0.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/comic/sweeper_comic_0.png" alt="Sweeper comic 0">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/comic/sweeper_comic_1.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/comic/sweeper_comic_1.png" alt="Sweeper comic 1">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/comic/sweeper_comic_2.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/comic/sweeper_comic_2.png" alt="Sweeper comic 2">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/comic/sweeper_comic_3.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/comic/sweeper_comic_3.png" alt="Sweeper comic 3">
+									</a>
+								</div>
+							</div>
+
+							<a class="carousel-control-prev" href="#sweeper_comic_carousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+
+							<a class="carousel-control-next" href="#sweeper_comic_carousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+
 					<!-- Imágenes -->
 					<div class="container">
-						<h3 class="section-title mb-5 text-center">Imágenes</h3>
+						<h3 class="section-title mb-5 text-center">Gameplay</h3>
 						<h6 class="section-subtitle text-center"></h6>
 
 						<div class="row">
@@ -272,33 +323,88 @@
 									"assets/img/game/album/swe7.png",
 									"assets/img/game/album/swe8.png",
 								];
-								var imagesC = [
-									"assets/img/game/album/wep1.png",
-									"assets/img/game/album/wep2.png",
-									"assets/img/game/album/wep3.png",
-									"assets/img/game/album/wep4.png",
-									"assets/img/game/album/wep5.png",
-									"assets/img/game/album/wep6.png",
-									"assets/img/game/album/wep7.png",
-								];
-								var imagesD = [
-									"assets/img/game/comic/sweeper_comic_0.png",
-									"assets/img/game/comic/sweeper_comic_1.png",
-									"assets/img/game/comic/sweeper_comic_2.png",
-									"assets/img/game/comic/sweeper_comic_3.png",
-								];
+
 
 								shuffleArray(imagesA);
 								shuffleArray(imagesB);
-								shuffleArray(imagesC);
-								shuffleArray(imagesD); // Always show the comic images in the same order
 
 								makeImageDisplayArray(imagesA);
 								makeImageDisplayArray(imagesB);
-								makeImageDisplayArray(imagesC);
-								makeImageDisplayArray(imagesD);
 
 							</script>
+						</div>
+					</div>
+
+					<!-- Armamento -->
+					<div class="container dra_margin">
+						<h3 class="section-title mb-5 text-center">Armamento</h3>
+						<h6 class="section-subtitle text-center">Armas disponibles en The Sweeper</h6>
+						<p></p>
+
+						<div id="sweeper_weapons_carousel" class="carousel slide mx-auto" data-ride="carousel" style="max-width: 900px;">
+							<ol class="carousel-indicators">
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="0" class="active"></li>
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="1"></li>
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="2"></li>
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="3"></li>
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="4"></li>
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="5"></li>
+								<li data-target="#sweeper_weapons_carousel" data-slide-to="6"></li>
+							</ol>
+
+							<div class="carousel-inner text-center">
+								<div class="carousel-item active">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep1.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep1.png" alt="Arma 1">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep2.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep2.png" alt="Arma 2">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep3.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep3.png" alt="Arma 3">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep4.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep4.png" alt="Arma 4">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep5.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep5.png" alt="Arma 5">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep6.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep6.png" alt="Arma 6">
+									</a>
+								</div>
+
+								<div class="carousel-item">
+									<a href="javascript:handlePopUpImage('assets/img/game/album/wep7.png')">
+										<img class="d-block mx-auto w-100 card dra_image_container2" src="assets/img/game/album/wep7.png" alt="Arma 7">
+									</a>
+								</div>
+							</div>
+
+							<a class="carousel-control-prev" href="#sweeper_weapons_carousel" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+
+							<a class="carousel-control-next" href="#sweeper_weapons_carousel" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
 						</div>
 					</div>
 
@@ -342,7 +448,7 @@
 						docgen_writeProfile(
 							"Enrique de la Calle",
 							"https://avatars.githubusercontent.com/u/7725287?v=4",
-							"Programación de IA",
+							"Programación e Integración",
 							[
 								{url: "https://github.com/101001000", img:"./assets/img/socials/ghicon.png"},
 								{url: "https://www.linkedin.com/in/enriquedelacalle/", img:"./assets/img/socials/z_linkedin.png"}
