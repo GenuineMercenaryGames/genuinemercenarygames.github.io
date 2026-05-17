@@ -11717,3 +11717,194 @@ section.has-img-bg:after {
   opacity: .7;
   margin-bottom: 15px;
 }
+
+.alien_slime_layer {
+	position: fixed;
+	inset: 0;
+	z-index: 1025;
+	pointer-events: none;
+	overflow: hidden;
+	filter: url("#alien_slime_filter");
+	opacity: 0.72;
+	-webkit-mask-image: linear-gradient(90deg, #000 0%, #000 18%, transparent 28%, transparent 72%, #000 82%, #000 100%);
+	mask-image: linear-gradient(90deg, #000 0%, #000 18%, transparent 28%, transparent 72%, #000 82%, #000 100%);
+}
+
+.alien_slime_filter_svg {
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+.alien_slime_drop {
+	position: absolute;
+	top: -260px;
+	width: var(--slime_width);
+	height: var(--slime_height);
+	border-radius: 45% 55% 48% 52% / 18% 22% 78% 82%;
+	background:
+		radial-gradient(circle at 45% 92%, rgba(210, 255, 90, 0.75) 0 8px, transparent 9px),
+		radial-gradient(circle at 62% 67%, rgba(155, 230, 40, 0.45) 0 6px, transparent 7px),
+		linear-gradient(
+			180deg,
+			rgba(175, 230, 45, 0.05) 0%,
+			rgba(125, 190, 30, 0.32) 18%,
+			rgba(78, 135, 18, 0.72) 58%,
+			rgba(35, 72, 13, 0.95) 100%
+		);
+	box-shadow:
+		0 0 18px rgba(115, 180, 35, 0.38),
+		0 0 42px rgba(70, 130, 20, 0.25),
+		inset 4px 0 12px rgba(230, 255, 120, 0.18),
+		inset -6px 0 18px rgba(10, 35, 6, 0.5);
+	transform-origin: 50% 0%;
+	animation-name: alien_slime_fall;
+	animation-duration: var(--slime_duration);
+	animation-delay: var(--slime_delay);
+	animation-timing-function: cubic-bezier(0.42, 0.02, 0.82, 0.65);
+	animation-iteration-count: infinite;
+}
+
+.alien_slime_drop::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -110px;
+	width: 45%;
+	height: 170px;
+	transform: translateX(-50%);
+	border-radius: 999px;
+	background: linear-gradient(
+		180deg,
+		rgba(75, 120, 28, 0),
+		rgba(95, 155, 38, 0.18) 28%,
+		rgba(72, 120, 28, 0.42) 72%,
+		rgba(42, 80, 18, 0.12)
+	);
+	filter: blur(3px);
+}
+
+.alien_slime_drop::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: -18px;
+	width: calc(var(--slime_width) * 1.25);
+	height: calc(var(--slime_width) * 1.05);
+	transform: translateX(-50%) rotate(var(--slime_rotation));
+	border-radius: 58% 42% 61% 39% / 47% 51% 49% 53%;
+	background:
+		radial-gradient(circle at 38% 33%, rgba(230, 255, 120, 0.55) 0 4px, transparent 5px),
+		radial-gradient(circle at 70% 62%, rgba(22, 50, 8, 0.38) 0 7px, transparent 8px),
+		rgba(62, 115, 20, 0.92);
+	box-shadow:
+		-7px -42px 0 -9px rgba(80, 140, 28, 0.45),
+		6px -73px 0 -11px rgba(120, 175, 38, 0.35),
+		-4px -108px 0 -13px rgba(70, 120, 22, 0.28),
+		0 0 18px rgba(110, 180, 35, 0.4);
+}
+
+.alien_slime_drop:nth-of-type(1) {
+	left: 2%;
+	--slime_width: 18px;
+	--slime_height: 180px;
+	--slime_duration: 8.5s;
+	--slime_delay: -1.2s;
+	--slime_rotation: -14deg;
+	--slime_drift: 18px;
+}
+
+.alien_slime_drop:nth-of-type(2) {
+	left: 4%;
+	--slime_width: 26px;
+	--slime_height: 245px;
+	--slime_duration: 11s;
+	--slime_delay: -5.6s;
+	--slime_rotation: 9deg;
+	--slime_drift: -12px;
+}
+
+.alien_slime_drop:nth-of-type(3) {
+	left: 6%;
+	--slime_width: 13px;
+	--slime_height: 135px;
+	--slime_duration: 7.4s;
+	--slime_delay: -3.1s;
+	--slime_rotation: 19deg;
+	--slime_drift: 9px;
+}
+
+.alien_slime_drop:nth-of-type(4) {
+	left: 8%;
+	--slime_width: 22px;
+	--slime_height: 210px;
+	--slime_duration: 12.5s;
+	--slime_delay: -7.8s;
+	--slime_rotation: -7deg;
+	--slime_drift: -22px;
+}
+
+.alien_slime_drop:nth-of-type(5) {
+	left: 93%;
+	--slime_width: 16px;
+	--slime_height: 170px;
+	--slime_duration: 9.2s;
+	--slime_delay: -2.4s;
+	--slime_rotation: 12deg;
+	--slime_drift: 14px;
+}
+
+.alien_slime_drop:nth-of-type(6) {
+	left: 95%;
+	--slime_width: 29px;
+	--slime_height: 260px;
+	--slime_duration: 13s;
+	--slime_delay: -6.2s;
+	--slime_rotation: -18deg;
+	--slime_drift: -16px;
+}
+
+.alien_slime_drop:nth-of-type(7) {
+	left: 97%;
+	--slime_width: 14px;
+	--slime_height: 145px;
+	--slime_duration: 7.8s;
+	--slime_delay: -4.4s;
+	--slime_rotation: 7deg;
+	--slime_drift: 10px;
+}
+
+.alien_slime_drop:nth-of-type(8) {
+	left: 99%;
+	--slime_width: 23px;
+	--slime_height: 225px;
+	--slime_duration: 10.8s;
+	--slime_delay: -8.1s;
+	--slime_rotation: -10deg;
+	--slime_drift: -20px;
+}
+
+@keyframes alien_slime_fall {
+	0% {
+		transform: translate3d(0, -220px, 0) scaleX(0.72) scaleY(0.55) rotate(-2deg);
+		opacity: 0;
+	}
+
+	12% {
+		opacity: 0.72;
+	}
+
+	48% {
+		transform: translate3d(calc(var(--slime_drift) * 0.45), 48vh, 0) scaleX(1.08) scaleY(1.18) rotate(3deg);
+		opacity: 0.78;
+	}
+
+	82% {
+		opacity: 0.52;
+	}
+
+	100% {
+		transform: translate3d(var(--slime_drift), 122vh, 0) scaleX(0.86) scaleY(1.42) rotate(-4deg);
+		opacity: 0;
+	}
+}

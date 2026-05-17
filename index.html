@@ -19,7 +19,35 @@
 		
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-				
+		
+		<div class="alien_slime_layer" aria-hidden="true">
+			<svg class="alien_slime_filter_svg">
+				<filter id="alien_slime_filter">
+					<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+					<feColorMatrix
+						in="blur"
+						mode="matrix"
+						values="
+							1 0 0 0 0
+							0 1 0 0 0
+							0 0 1 0 0
+							0 0 0 18 -8"
+						result="goo"
+					/>
+					<feBlend in="SourceGraphic" in2="goo"/>
+				</filter>
+			</svg>
+
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+			<span class="alien_slime_drop"></span>
+		</div>
+		
 		<!-- Document content generation JS -->
 		<script src="assets/js/docgen.js"></script>
 		
