@@ -197,7 +197,7 @@
 						</div>
 					</div>
 
-					<!-- Oculto por ahora -->
+					<!-- Vídeo - Oculto por ahora -->
 					<div class="dra_margin" style="display: none;">
 						<h1>Vídeos</h1>
 						<!-- TODO : Poner un vídeo de gameplay o trailer del juego o lo que sea, subido de youtube. Ahora mismo, esto no apunta a ningún vídeo. -->
@@ -206,6 +206,7 @@
 						</center>
 					</div>
 
+					<!-- Imágenes -->
 					<div class="container">
 						<h3 class="section-title mb-5 text-center">Imágenes</h3>
 						<h6 class="section-subtitle text-center"></h6>
@@ -253,19 +254,49 @@
 								}
 
 								var imagesA = [
-									"assets/img/game/album/1.png",
-									"assets/img/game/album/2.png",
+									"assets/img/game/album/game1.png",
+									"assets/img/game/album/game2.png",
+									"assets/img/game/album/game3.png",
+									"assets/img/game/album/game4.png",
+									"assets/img/game/album/game5.png",
+									"assets/img/game/album/victory.png",
+									"assets/img/game/album/defeat.png",
 								];
 								var imagesB = [
+									"assets/img/game/album/swe1.png",
+									"assets/img/game/album/swe2.png",
+									"assets/img/game/album/swe3.png",
+									"assets/img/game/album/swe4.png",
+									"assets/img/game/album/swe5.png",
+									"assets/img/game/album/swe6.png",
+									"assets/img/game/album/swe7.png",
+									"assets/img/game/album/swe8.png",
 								];
-
-								// Lo de las listas es solo una forma de demostrar que podemos escribir diferentes secciones, en plan imágenes de personajes, imágenes de screenshots, etc... lo que sea. Y si crece mucho la galería, siempre podemos ponerlo en una página a parte y que aquí se vea solo la tarjeta en plan como en la tienda de Steam.
+								var imagesC = [
+									"assets/img/game/album/wep1.png",
+									"assets/img/game/album/wep2.png",
+									"assets/img/game/album/wep3.png",
+									"assets/img/game/album/wep4.png",
+									"assets/img/game/album/wep5.png",
+									"assets/img/game/album/wep6.png",
+									"assets/img/game/album/wep7.png",
+								];
+								var imagesD = [
+									"assets/img/game/comic/sweeper_comic_0.png",
+									"assets/img/game/comic/sweeper_comic_1.png",
+									"assets/img/game/comic/sweeper_comic_2.png",
+									"assets/img/game/comic/sweeper_comic_3.png",
+								];
 
 								shuffleArray(imagesA);
 								shuffleArray(imagesB);
+								shuffleArray(imagesC);
+								shuffleArray(imagesD); // Always show the comic images in the same order
 
 								makeImageDisplayArray(imagesA);
 								makeImageDisplayArray(imagesB);
+								makeImageDisplayArray(imagesC);
+								makeImageDisplayArray(imagesD);
 
 							</script>
 						</div>
